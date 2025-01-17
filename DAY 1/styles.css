@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(58deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    display: block;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "courier new";
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.numbers {
+    display: flex;
+    position: relative;
+}
+
+.one {
+    position: relative;
+    width: 20px;
+    height: 80px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 10%);
+    left: 15px;
+}
+
+.one::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 40px;
+    background-color: white;
+    opacity: 0.9;
+    transform: translateX(-25px) translateY(-0.5px) rotate(45deg);
+    border-radius: 4px;
+}
+
+.zero-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 20px solid white;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 5%);
+    position: relative;
+    z-index: -1;
+    left: 5px;
+}
+
+.zero-2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 20px solid white;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 5%);
+    position: relative;
+    z-index: -2;
+    left: -10px;
+}
+
+.days {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.75;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.75;
+}
